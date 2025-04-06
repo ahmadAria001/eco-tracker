@@ -1,0 +1,1 @@
+create type transaction_category as enum ('income', 'expense');
