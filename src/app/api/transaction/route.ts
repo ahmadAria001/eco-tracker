@@ -11,12 +11,11 @@ export async function GET(request: NextRequest) {
     const result = await getTransactions(request, user);
 
     if (!result.success) {
-        return NextResponse.json({error: result.error}, {status: 400});
+        return NextResponse.json(result, {status: 400});
     }
 
     return NextResponse.json({
-        data: result.data.transactions,
-        pagination: result.data.pagination
+        result
     }, {status: 200});
 }
 
@@ -30,8 +29,8 @@ export async function POST(request: NextRequest) {
     const result = await createTransaction(body, user.id);
 
     if (!result.success) {
-        return NextResponse.json({error: result.error}, {status: 400});
+        return NextResponse.json(result, {status: 400});
     }
 
-    return NextResponse.json({data: result.data}, {status: 200});
+    return NextResponse.json(result, {status: 200});
 }
