@@ -22,13 +22,6 @@ interface ThemeSettings {
   selectedColorScheme: number | null
 }
 
-// Initial state
-const defaultCustomTheme: ThemeColors = {
-  background: "#ffffff",
-  primary: "#0ea5e9",
-  secondary: "#f1f5f9",
-}
-
 const initialState: ThemeSettings = {
   activeTheme: 'system',
   colorScheme: 'default',

@@ -1,7 +1,6 @@
 "use client"
 
 import * as React from "react"
-import { supabase } from '@/lib/supabase'
 import {
   BookOpen,
   Bot,
@@ -28,8 +27,6 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
-import { useAuth } from "@/contexts/AuthContext"
-import { useRouter } from "next/router"
 
 const data = {
   user: {
