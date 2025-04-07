@@ -8,7 +8,7 @@ export default function AuthCallback() {
   const router = useRouter()
 
   useEffect(() => {
-    supabase.auth.onAuthStateChange((event, session) => {
+    supabase.auth.onAuthStateChange((event, _) => {
       if (event === 'SIGNED_IN') {
         router.push('/dashboard')
       }
