@@ -5,7 +5,6 @@ import {
   DropdownMenuLabel,
   DropdownMenuItem,
   DropdownMenuSeparator,
-  DropdownMenuSubContent,
 } from "@/components/ui/dropdown-menu"
 import { useThemeSettings, CustomColorScheme } from "@/app/components/custom/theme/ThemeSettingsContext"
 import { ColorSchemeDialog } from "./color-scheme-dialog"

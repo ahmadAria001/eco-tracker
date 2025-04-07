@@ -34,7 +34,6 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar"
-import { useTheme } from 'next-themes'
 import { useState, useEffect } from "react"
 import { ThemeMenu } from "./theme-menu"
 import { useThemeColors } from "@/hooks/use-theme-colors"
